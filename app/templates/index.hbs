@@ -1,9 +1,9 @@
 <h1>Bustle</h1>
 
-<h3>The 9 Most Important News Stories Affecting Women</h3>
-
-<h3>Signs You Might Want To Date Other People</h3>
-
-<h3>An Electronics Ban Might Be Coming To U.S. Planes</h3>
+<ul>
+  {{#each model as |article|}}
+    {{article-tile article=article}}
+  {{/each}}
+</ul>
 
 {{#link-to 'contact'}}Contact Us{{/link-to}}

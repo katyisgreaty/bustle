@@ -1,0 +1,8 @@
+<li>
+  {{article.title}}, by {{article.author}}
+  {{#if isBodyShowing }}
+    <p>{{article.body}}</p>
+  {{else}}
+    <button {{action 'bodyShow'}}>Read article</button>
+  {{/if}}
+</li>

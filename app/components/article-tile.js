@@ -5,6 +5,9 @@ export default Ember.Component.extend({
   actions: {
     bodyShow: function() {
       this.set('isBodyShowing', true);
+    },
+    bodyHide: function() {
+      this.set('isBodyShowing', false);
     }
   }
 });

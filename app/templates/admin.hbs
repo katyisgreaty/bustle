@@ -15,8 +15,12 @@
   {{new-article saveArticle="saveArticle"}}
 
   {{#each model as |article|}}
-  {{article-tile article=article destroyArticle="destroyArticle"}}
+  <div>{{article-tile article=article update="update" destroyArticle="destroyArticle" markFeatured="markFeatured"}}
+  </div>
+  {{update-article article=article update="update"}}
   <button {{action 'destroyArticle' article}}>Delete Article</button>
+  <button {{action 'markFeatured' article}}>Mark as Featured</button>
+  <!-- <button {{action 'featuredHide' article}}>Remove Featured</button> -->
   {{/each}}
 
   {{#link-to 'index'}}Home{{/link-to}}

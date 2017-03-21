@@ -1,3 +1,12 @@
+{{#if isFeatured}}
+  <img src="{{article.image}}" class="image" alt="" height="500" width="750" {{action 'bodyShow'}}>
+  <span {{action 'bodyShow'}}>{{article.title}}, by {{article.author}} </span>
+  {{#if isBodyShowing }}
+    <p {{action 'bodyHide'}}>{{article.body}}</p>
+  {{else}}
+    <!-- <button {{action 'bodyShow'}}>Read article</button> -->
+  {{/if}}
+{{else}}
   <img src="{{article.image}}" class="image" alt="" height="200" width="350" {{action 'bodyShow'}}>
   <span {{action 'bodyShow'}}>{{article.title}}, by {{article.author}} </span>
   {{#if isBodyShowing }}
@@ -5,3 +14,4 @@
   {{else}}
     <!-- <button {{action 'bodyShow'}}>Read article</button> -->
   {{/if}}
+{{/if}}

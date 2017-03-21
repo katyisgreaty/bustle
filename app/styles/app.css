@@ -21,3 +21,7 @@ p {
   background-color: black;
   text-align: center;
 }
+
+.featured {
+  color: purple;
+}

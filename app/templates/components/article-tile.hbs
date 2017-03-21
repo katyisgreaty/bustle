@@ -7,8 +7,8 @@
     <!-- <button {{action 'bodyShow'}}>Read article</button> -->
   {{/if}}
 {{else}}
-  <img src="{{article.image}}" class="image" alt="" height="200" width="350" {{action 'bodyShow'}}>
-  <span {{action 'bodyShow'}}>{{article.title}}, by {{article.author}} </span>
+  <img src="{{article.image}}" class="image" alt="" height="600" width="950" {{action 'bodyShow'}}> <br>
+  <span class="text" {{action 'bodyShow'}}>{{article.title}}, by {{article.author}} </span>
   {{#if isBodyShowing }}
     <p {{action 'bodyHide'}}>{{article.body}}</p>
   {{else}}

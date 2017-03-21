@@ -9,14 +9,17 @@
 </nav>
 
 <body>
+<h1>Admin Editing Page</h1>
+
 <div class="container">
+  {{new-article saveArticle="saveArticle"}}
+
   {{#each model as |article|}}
   {{article-tile article=article}}
   {{/each}}
 
-  {{#link-to 'contact'}}Contact Us{{/link-to}}
-<br>
-  {{#link-to 'admin'}}Admin{{/link-to}}
+  {{#link-to 'index'}}Home{{/link-to}}
+
 </div>
 
 <div class="footer">Bustle Footer</div>

@@ -1,9 +1,9 @@
 <li>
-  {{article.image}}
-  {{article.title}}, by {{article.author}}
+  <img src="{{article.image}}" class="image" alt="" {{action 'bodyShow'}}>
+  <span {{action 'bodyShow'}}>{{article.title}}, by {{article.author}} </span>
   {{#if isBodyShowing }}
     <p {{action 'bodyHide'}}>{{article.body}}</p>
   {{else}}
-    <button {{action 'bodyShow'}}>Read article</button>
+    <!-- <button {{action 'bodyShow'}}>Read article</button> -->
   {{/if}}
 </li>

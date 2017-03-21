@@ -1,3 +1,21 @@
 p {
   background-color: red;
 }
+
+.navbar {
+  height: 100px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}

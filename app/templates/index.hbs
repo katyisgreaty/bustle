@@ -1,9 +1,13 @@
-<h1>Bustle</h1>
+<h1 class="jumbotron">Bustle</h1>
 
-<ul>
+<body>
+<div class="container">
   {{#each model as |article|}}
-    {{article-tile article=article}}
+  {{article-tile article=article}}
   {{/each}}
-</ul>
 
-{{#link-to 'contact'}}Contact Us{{/link-to}}
+
+  {{#link-to 'contact'}}Contact Us{{/link-to}}
+</div>
+
+</body>

@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand">
-        <img class="logo" src="https://assets.materialup.com/uploads/28d76455-d869-4a1f-8425-c13abaf42d3a/avatar.jpg" alt="Bustle logo" />
+        {{#link-to 'index'}}<img class="logo" src="https://assets.materialup.com/uploads/28d76455-d869-4a1f-8425-c13abaf42d3a/avatar.jpg" alt="Bustle logo" />{{/link-to}}
       </a>
     </div>
   </div>
@@ -15,7 +15,8 @@
   {{new-article saveArticle="saveArticle"}}
 
   {{#each model as |article|}}
-  {{article-tile article=article}}
+  {{article-tile article=article destroyArticle="destroyArticle"}}
+  <button {{action 'delete' article}}>Delete Article</button>
   {{/each}}
 
   {{#link-to 'index'}}Home{{/link-to}}

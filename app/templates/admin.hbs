@@ -16,12 +16,12 @@
 
   {{#each model as |article|}}
   {{article-tile article=article destroyArticle="destroyArticle"}}
-  <button {{action 'delete' article}}>Delete Article</button>
+  <button {{action 'destroyArticle' article}}>Delete Article</button>
   {{/each}}
 
   {{#link-to 'index'}}Home{{/link-to}}
 
 </div>
 
-<div class="footer">Bustle Footer</div>
+<div class="footer">Do the Bustle. Da Da Da Da Da Da Da Da</div>
 </body>

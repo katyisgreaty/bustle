@@ -12,15 +12,11 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
 
-    delete(article) {
-      if (confirm('Are you sure you want to delete this article?')) {
-        this.sendAction('destroyArticle', article);
-      }
-    },
-
     destroyArticle(article) {
+        if (confirm('Are you sure you want to delete this article?')) {
       article.destroyRecord();
       this.transitionTo('admin');
+    }
     }
   }
 });
